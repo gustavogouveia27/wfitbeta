@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ebebeb; 
+    color: #000000; 
+}
+
+header {
+    background: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.small-text {
+    font-size: 16px;
+    margin: 0;
+    color: #cccccc; 
+    padding: 6px;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+.container {
+    max-width: 1200px; /* Ajuste conforme necessário */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-card {
+    flex: 1 1 calc(33.333% - 30px); /* Ajuste a porcentagem e o gap conforme necessário */
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.price {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f60505; /* WhatsApp color */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 30px); /* Dois cartões por linha em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        flex: 1 1 100%; /* Um cartão por linha em telas muito pequenas */
+    }
+}
+
+.dark {
+    text-align: center; 
+    padding: 30px 30px; 
+}
+
+.dark img {
+    max-width: 60%; 
+    height: auto;
+}
+
+
+
+.message-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+  
+    max-width: 100vw; 
+    box-sizing: border-box; 
+    margin: 0;
+    position: relative;
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    background-color: #000000;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    max-width: 100vw; 
+    box-sizing: border-box; 
+    position: relative; 
+    text-align: center; 
+}
+
+.message-container span {
+    margin-bottom: 30px; 
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative; 
+}
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    min-height: 50px;
+}
+
+/* Contêiner de contato */
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Mudança para fixed para que fique visível ao rolar a página */
+    right: 15px; 
+    bottom: 15px; /* Ajuste para garantir que fique visível */
+    background: transparent; 
+    padding: 10px;
+    border-radius: 5px; 
+    z-index: 1000; /* Garantir que fique sobre outros elementos */
+}
+
+/* Item de contato */
+.contact-item {
+    margin: 0 5px; 
+}
+
+/* Ícones de contato */
+.contact-icon {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s, filter 0.3s; 
+}
+
+.contact-icon:hover {
+    transform: scale(1.1); 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contact-container {
+        bottom: 10px; /* Ajuste para telas menores */
+        right: 10px; /* Ajuste para telas menores */
+    }
+
+    .contact-icon {
+        width: 25px; /* Reduzir o tamanho dos ícones em telas menores */
+        height: 25px;
+    }
+}
+
+.text{
+    color: #000000;
+    font-size: 30px;
+    
+}
